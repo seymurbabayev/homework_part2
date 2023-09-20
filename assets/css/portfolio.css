@@ -1,0 +1,33 @@
+.portfolio_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.portfolio_card {
+    position: relative;
+}
+.portfolio_card:not(:last-child) {
+    margin-bottom: 20px;
+}
+.portfolio_card .card_img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .4s;
+}
+.portfolio_card .card_img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.portfolio_card .card_title {
+    color: #fff;
+    background-color: var(--primary-green);
+    width: 100%;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
